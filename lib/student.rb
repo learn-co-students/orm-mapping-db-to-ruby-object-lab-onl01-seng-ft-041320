@@ -42,10 +42,12 @@ class Student
   end
 
   def self.all_students_in_grade_9
-    students_in_grade_9 = []
+    students_in_grade_9 = self.all_students_in_grade_X(9)
+    '''
     self.all.each do |student|
       students_in_grade_9 << student if student.grade == "9"
     end
+    '''
     students_in_grade_9
   end
 
